@@ -47,10 +47,14 @@
             </LinearLayout>
 
             <ImageView
-                android:src="@android:drawable/ic_popup_sync"
-                app:tint="@color/neon_green"
-                android:layout_width="32dp"
-                android:layout_height="32dp"/>
+                android:id="@+id/btnRefresh"
+                android:src="@android:drawable/ic_menu_rotate"
+                app:tint="@color/neon_blue"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"/>
         </LinearLayout>
 
         <GridLayout
@@ -61,78 +65,29 @@
 
             <LinearLayout
                 android:background="@drawable/bg_glass_card"
-                android:layout_width="0dp"
-                android:layout_height="110dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="6dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:text="SENSOR 1"
-                    android:textColor="#AAAAAA"
-                    android:textSize="12sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:id="@+id/temp1"
-                    android:text="--"
-                    android:textColor="@color/neon_blue"
-                    android:textSize="36sp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:text="°C"
-                    android:textColor="#AAAAAA"
-                    android:textSize="14sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                android:layout_width="0dp" android:layout_height="110dp"
+                android:layout_columnWeight="1" android:layout_margin="6dp"
+                android:gravity="center" android:orientation="vertical">
+                <TextView android:text="SENSOR 1" android:textColor="#AAAAAA" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/temp1" android:text="--" android:textColor="@color/neon_blue" android:textSize="36sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="°C" android:textColor="#AAAAAA" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
             </LinearLayout>
 
             <LinearLayout
                 android:background="@drawable/bg_glass_card"
-                android:layout_width="0dp"
-                android:layout_height="110dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="6dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:text="SENSOR 2"
-                    android:textColor="#AAAAAA"
-                    android:textSize="12sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:id="@+id/temp2"
-                    android:text="--"
-                    android:textColor="@color/neon_blue"
-                    android:textSize="36sp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:text="°C"
-                    android:textColor="#AAAAAA"
-                    android:textSize="14sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                android:layout_width="0dp" android:layout_height="110dp"
+                android:layout_columnWeight="1" android:layout_margin="6dp"
+                android:gravity="center" android:orientation="vertical">
+                <TextView android:text="SENSOR 2" android:textColor="#AAAAAA" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/temp2" android:text="--" android:textColor="@color/neon_blue" android:textSize="36sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="°C" android:textColor="#AAAAAA" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
             </LinearLayout>
 
             <LinearLayout
                 android:background="@drawable/bg_glass_card"
-                android:layout_width="0dp"
-                android:layout_height="110dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="6dp"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:layout_width="0dp" android:layout_height="110dp"
+                android:layout_columnWeight="1" android:layout_margin="6dp"
+                android:gravity="center" android:orientation="vertical">
                 <TextView android:text="SENSOR 3" android:textColor="#AAAAAA" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
                 <TextView android:id="@+id/temp3" android:text="--" android:textColor="@color/neon_blue" android:textSize="36sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
                 <TextView android:text="°C" android:textColor="#AAAAAA" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
@@ -140,12 +95,9 @@
 
             <LinearLayout
                 android:background="@drawable/bg_glass_card"
-                android:layout_width="0dp"
-                android:layout_height="110dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="6dp"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:layout_width="0dp" android:layout_height="110dp"
+                android:layout_columnWeight="1" android:layout_margin="6dp"
+                android:gravity="center" android:orientation="vertical">
                 <TextView android:text="SENSOR 4" android:textColor="#AAAAAA" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
                 <TextView android:id="@+id/temp4" android:text="--" android:textColor="@color/neon_blue" android:textSize="36sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
                 <TextView android:text="°C" android:textColor="#AAAAAA" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
@@ -168,7 +120,6 @@
             android:weightSum="4"
             android:background="@drawable/bg_glass_card"
             android:padding="16dp">
-
             <TextView android:id="@+id/ac1" android:text="AC 1" android:layout_weight="1" android:textColor="#FF4B4B" android:gravity="center" android:textStyle="bold" android:layout_width="0dp" android:layout_height="wrap_content"/>
             <TextView android:id="@+id/ac2" android:text="AC 2" android:layout_weight="1" android:textColor="#FF4B4B" android:gravity="center" android:textStyle="bold" android:layout_width="0dp" android:layout_height="wrap_content"/>
             <TextView android:id="@+id/ac3" android:text="AC 3" android:layout_weight="1" android:textColor="#FF4B4B" android:gravity="center" android:textStyle="bold" android:layout_width="0dp" android:layout_height="wrap_content"/>
@@ -211,6 +162,34 @@
             android:orientation="vertical"
             android:background="@drawable/bg_glass_card"
             android:padding="16dp"/>
+
+        <TextView
+            android:text="MANAGEMENT"
+            android:textColor="#B0BEC5"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="10dp"
+            android:letterSpacing="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:background="@drawable/bg_glass_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddManual"
+                android:text="+ Add Manual Class"
+                android:background="@drawable/bg_neon_button"
+                android:textColor="#00ff88"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="40dp"/>
 
     </LinearLayout>
 </ScrollView>

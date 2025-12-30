@@ -138,7 +138,7 @@
         </GridLayout>
 
         <TextView
-            android:text="QUICK ACTIONS"
+            android:text="MANAGEMENT"
             android:textColor="#B0BEC5"
             android:textSize="12sp"
             android:letterSpacing="0.1"
@@ -147,13 +147,90 @@
             android:layout_height="wrap_content"/>
 
         <LinearLayout
+            android:id="@+id/btnUploadSem"
+            android:background="@drawable/bg_glass_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:src="@android:drawable/ic_menu_upload"
+                app:tint="#FFC107"
+                android:layout_width="28dp"
+                android:layout_height="28dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+                <TextView
+                    android:text="Upload Semester Planner"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="Overwrites entire schedule"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnUploadMod"
+            android:background="@drawable/bg_glass_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:src="@android:drawable/ic_menu_upload"
+                app:tint="@color/neon_blue"
+                android:layout_width="28dp"
+                android:layout_height="28dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+                <TextView
+                    android:text="Upload Modified Schedule"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="Merges with existing data"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/btnViewMaster"
             android:background="@drawable/bg_glass_card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="20dp">
+            android:padding="20dp"
+            android:layout_marginBottom="30dp">
 
             <ImageView
                 android:src="@android:drawable/ic_menu_agenda"
@@ -166,15 +243,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginStart="16dp">
-
                 <TextView
                     android:text="View Master Schedule"
                     android:textColor="@color/white"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
-
                 <TextView
                     android:text="Access full database"
                     android:textColor="#AAAAAA"
